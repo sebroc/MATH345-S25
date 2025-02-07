@@ -16,7 +16,7 @@ def wikipedia_data():
     tdmatrix = np.loadtxt("wikipedia_td.txt", comments="#")
 
     # Create the articles array
-    articles = [tdmatrix[:, j] for j in range(500)]
+    articles = tdmatrix
 
     # Create the dictionary array
     dictionary = [
